@@ -18,17 +18,13 @@ int main (){
 
 
     for (int start = 0; start < num; start++) {
-        //cout << "start at " << start << ' ' << barn[start] << ' ';
         int curr_answer = 0;
         for (int curr = start; curr < start + num; curr++) {
             curr_answer += barn[curr] * (curr - start);
-            //cout << curr_answer << ' ';
         }
-        //cout << curr_answer << ' ';
         if (curr_answer < answer) {
             answer = curr_answer;
         }
-
     }  
     fout << answer << '\n';
 }
