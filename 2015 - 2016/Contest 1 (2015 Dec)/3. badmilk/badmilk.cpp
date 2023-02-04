@@ -18,8 +18,6 @@ int main() {
     int N, M, D, S;
     fin >> N >> M >> D >> S;
 
-
-
     Event events[D + S];
 
     for (int i = 0; i < D; i++) {
@@ -64,5 +62,4 @@ int main() {
     }
     ofstream fout("badmilk.out");
     fout << max_num;
-    
 }
