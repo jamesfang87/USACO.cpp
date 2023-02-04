@@ -1,7 +1,4 @@
-#include <fstream>
-#include <algorithm>
-#include <set>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
 
 struct cow_struct {
