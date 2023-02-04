@@ -40,11 +40,6 @@ int main() {
 	}
     
 
-
-
-
-
-
     vector<bool> v(k);
     fill(v.begin(), v.begin() + 2, true);
 
