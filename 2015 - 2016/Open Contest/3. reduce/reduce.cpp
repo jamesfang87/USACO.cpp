@@ -1,6 +1,4 @@
-#include <algorithm>
-#include <vector>
-#include <fstream>
+#include <bits/stdc++.h>
 using namespace std;
 
 
