@@ -1,7 +1,4 @@
-#include <fstream>
-#include <utility>
-#include <algorithm>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 
@@ -33,15 +30,4 @@ int main() {
     else if (pair.first == pair2.first) {
         fout << max(pair.second, pair2.second) - pair.first;
     }
-    
-    /*
-    int a, b, c, d;
-	fin >> a >> b >> c >> d;
-
-	int total = (b - a) + (d - c);  // the sum of the two intervals
-	int intersection = max(min(b, d) - max(a, c), 0);  // subtract the intersection
-	int ans = total - intersection;
-
-	fout << ans << "\n";
-    */
 }
