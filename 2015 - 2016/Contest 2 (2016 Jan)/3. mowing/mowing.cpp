@@ -6,7 +6,7 @@ int main() {
     ifstream fin("mowing.in");
     ofstream fout("mowing.out");
 
-    pair<int, int> coords = {1000, 1000}; //x, y
+    pair<int, int> coords = {1000, 1000};
 
     int num;
     fin >> num;
