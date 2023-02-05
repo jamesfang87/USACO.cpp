@@ -1,20 +1,18 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
 struct Event {
     int person, time, milk = -1;
 };
-
 
 bool compare(Event event1, Event event2) {
     if (event1.time != event2.time) return (event1.time < event2.time);
     else return (event1.milk < event2.milk);
 }
 
-
 int main() {
     ifstream fin("badmilk.in");
+    ofstream fout("badmilk.out");
     int N, M, D, S;
     fin >> N >> M >> D >> S;
 
@@ -32,8 +30,8 @@ int main() {
         fin >> person >> time;
         events[i] = {person, time, -1};
     }
+    
     sort(events, events + (D + S), compare);
-
 
     int max_num = 0;
     for (int i = 1; i <= M; i++) {
@@ -60,6 +58,6 @@ int main() {
             max_num = max(max_num, num);
         }
     }
-    ofstream fout("badmilk.out");
+    
     fout << max_num;
 }
