@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
 int main() {
     ifstream fin("speeding.in");
     ofstream fout("speeding.out");
@@ -9,8 +8,9 @@ int main() {
     int road_segs, bessie_segs;
     fin >> road_segs >> bessie_segs;
 
-    vector<int> road = {};
-    vector<int> bessie = {};
+    vector<int> road;
+    vector<int> bessie;
+    
     for (int i = 0; i < road_segs; i++) {
         int len, speed;
         fin >> len >> speed;
@@ -28,6 +28,7 @@ int main() {
     }
     
     int answer = 0;
+    
     for (int d = 0; d < 100; d++) {
         if (bessie[d] > road[d]) {
             int diff = bessie[d] - road[d];
@@ -36,5 +37,6 @@ int main() {
             }
         }
     }
+    
     fout << answer;
 }
