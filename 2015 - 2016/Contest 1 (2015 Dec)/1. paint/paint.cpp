@@ -6,7 +6,6 @@ int main() {
     ifstream fin("paint.in");
     ofstream fout("paint.out");
     
-    
     std::pair<int, int> pair;
     fin >> pair.first >> pair.second;
     std::pair<int, int> pair2;
