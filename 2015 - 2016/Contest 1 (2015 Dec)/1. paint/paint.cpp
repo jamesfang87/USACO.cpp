@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
 int main() {
     ifstream fin("paint.in");
     ofstream fout("paint.out");
