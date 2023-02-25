@@ -1,9 +1,4 @@
-#include <iostream>
-#include <fstream>
-#include <iterator>
-#include <unordered_set>
-#include <vector>
-#include <set>
+#include <bits/stdc++.h>
 using namespace std;
 
 
